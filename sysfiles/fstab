@@ -1,0 +1,8 @@
+# /
+UUID=7a51910c-1b2c-472d-9918-c77500dadd0b / ext4 rw,relatime 0 1
+
+# /boot
+UUID=6487-8357 /boot vfat rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro	0 2
+
+# /mnt/ntfs
+UUID=1EE2E81B063A25E3 /mnt/ntfs ntfs fmask=137,dmask=027,umask=0022,uid=1000,gid=1000 0 1

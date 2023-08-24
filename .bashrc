@@ -10,8 +10,8 @@ HISTSIZE= HISTFILESIZE=
 PS1='\[\e[0m\]\w \[\e[0m\]>\[\e[0m\] '
 
 alias yt-dlp='yt-dlp -o ~/videos/"%(title)s.%(ext)s"'
-alias nf='neofetch --ascii ~/text/nfascii --gap '-250' --colors 4 4 4 4 7 7'
-alias neofetch='neofetch --ascii ~/text/nfascii --gap '-250' --colors 4 4 4 4 7 7'
+alias nf='neofetch --ascii ~/text/nfascii --gap '-250' --colors 4 4 7 4 7 7'
+alias neofetch='neofetch --ascii ~/text/nfascii --gap '-250' --colors 4 4 7 4 7 7'
 alias ls='ls --color=auto'
 alias aria2c='aria2c --enable-dht=true --file-allocation=none'
 alias lss='sudo du -h --max-depth=1 . | sort -rh'

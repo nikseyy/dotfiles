@@ -29,10 +29,10 @@ static const char col_norbd[]       = "#090a0b";
 
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
-	[SchemeNorm] = { col_norfg, col_allbg, col_norbd },
-	[SchemeSel]  = { col_selfg, col_selfg,  col_selbd  },
-	[SchemeStatus]  = { col_selfg, col_allbg,  "#000000"  }, // Statusbar right {text,background,not used but cannot be empty}
-	[SchemeTagsSel]  = { col_selfg, col_allbg,  "#000000"  }, // Tagbar left selected {text,background,not used but cannot be empty}
+    [SchemeNorm] = { col_norfg, col_allbg, col_norbd },
+    [SchemeSel]  = { col_selfg, col_selfg,  col_selbd  },
+    [SchemeStatus]  = { col_selfg, col_allbg,  "#000000"  }, // Statusbar right {text,background,not used but cannot be empty}
+    [SchemeTagsSel]  = { col_selfg, col_allbg,  "#000000"  }, // Tagbar left selected {text,background,not used but cannot be empty}
     [SchemeTagsNorm]  = { col_norfg, col_allbg,  "#000000"  }, // Tagbar left unselected {text,background,not used but cannot be empty}
     [SchemeInfoSel]  = { col_selfg, col_allbg,  "#000000"  }, // infobar middle  selected {text,background,not used but cannot be empty}
     [SchemeInfoNorm]  = { col_selfg, col_allbg,  "#000000"  }, // infobar middle  unselected {text,background,not used but cannot be empty}
@@ -108,31 +108,28 @@ static Key keys[] = {
     { MODKEY,                       XK_Down,   focusstack,     {.i = -1 } },
     { MODKEY,                       XK_t,      incnmaster,     {.i = +1 } },
     { MODKEY,                       XK_y,      incnmaster,     {.i = -1 } },
-	{ MODKEY,		                XK_r,	   zoom,           {0} },
+    { MODKEY,		            XK_r,      zoom,           {0} },
     { MODKEY,                       XK_Tab,    view,           {0} },
-	{ MODKEY|ShiftMask,	            XK_q,      killclient,     {0} },
-	{ MODKEY|ShiftMask,             XK_t,      setlayout,      {.v = &layouts[0]} },
-	{ MODKEY|ShiftMask,             XK_f,      setlayout,      {.v = &layouts[1]} },
-	{ MODKEY|ShiftMask,             XK_m,      setlayout,      {.v = &layouts[2]} },
-	{ MODKEY|ShiftMask,             XK_space,  togglefloating, {0} },
-	{ MODKEY|ShiftMask,             XK_space,  setlayout,      {0} },
-	{ MODKEY,                       XK_0,      view,           {.ui = ~0 } },
-	{ MODKEY|ShiftMask,             XK_0,      tag,            {.ui = ~0 } },
+    { MODKEY|ShiftMask,	            XK_q,      killclient,     {0} },
+    { MODKEY|ShiftMask,             XK_t,      setlayout,      {.v = &layouts[0]} },
+    { MODKEY|ShiftMask,             XK_f,      setlayout,      {.v = &layouts[1]} },
+    { MODKEY|ShiftMask,             XK_m,      setlayout,      {.v = &layouts[2]} },
+    { MODKEY|ShiftMask,             XK_space,  togglefloating, {0} },
+    { MODKEY|ShiftMask,             XK_space,  setlayout,      {0} },
+    { MODKEY,                       XK_0,      view,           {.ui = ~0 } },
+    { MODKEY|ShiftMask,             XK_0,      tag,            {.ui = ~0 } },
     { MODKEY,                       XK_slash,  focusstack,     {.i = +1 } },
-    { MODKEY,                       XK_Right,  focusstack,     {.i = +1 } },
     { MODKEY,                       XK_period, focusmon,       {.i = +1 } },
-	{ MODKEY|ShiftMask,             XK_period, tagmon,         {.i = +1 } },
-    { MODKEY,                       XK_Down,   focusmon,       {.i = +1 } },
-    { MODKEY|ShiftMask,             XK_Down,   tagmon,         {.i = +1 } },
+    { MODKEY|ShiftMask,             XK_period, tagmon,         {.i = +1 } },
     TAGKEYS(                        XK_1,                      0)
-	TAGKEYS(                        XK_2,                      1)
-	TAGKEYS(                        XK_3,                      2)
-	TAGKEYS(                        XK_4,                      3)
-	TAGKEYS(                        XK_5,                      4)
-	TAGKEYS(                        XK_6,                      5)
-	TAGKEYS(                        XK_7,                      6)
-	TAGKEYS(                        XK_8,                      7)
-	TAGKEYS(                        XK_9,                      8)
+    TAGKEYS(                        XK_2,                      1)
+    TAGKEYS(                        XK_3,                      2)
+    TAGKEYS(                        XK_4,                      3)
+    TAGKEYS(                        XK_5,                      4)
+    TAGKEYS(                        XK_6,                      5)
+    TAGKEYS(                        XK_7,                      6)
+    TAGKEYS(                        XK_8,                      7)
+    TAGKEYS(                        XK_9,                      8)
 };
 
 /* button definitions */

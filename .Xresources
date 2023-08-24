@@ -1,0 +1,61 @@
+URxvt*background: rgba:0000/0000/0200/a800
+URxvt.foreground:	#ffffff
+URxvt*depth: 32
+URxvt.font:			xft:Terminus:pixelsize=17
+URxvt.boldFont:		xft:Terminus:bold:pixelsize=17
+URxvt.scrollBar:	false
+URxvt.saveLines:	65535
+URxvt.perl-ext-common: keyboard-select,url-select,clipboard
+URxvt.keysym.M-Escape: perl:keyboard-select:activate
+URxvt.keysym.M-s: perl:keyboard-select:search
+URxvt.keysym.M-u: perl:url-select:select_next
+URxvt.keyboard-select.clipboard: true
+Xft*dpi:       96
+Xft*antialias: True
+Xft*hinting:   Full
+URxvt.keysym.KP_Add:    +
+URxvt.keysym.KP_Subtract: -
+URxvt.keysym.KP_Multiply: *
+URxvt.keysym.KP_Divide  : /
+URxvt.keysym.KP_Decimal : .
+URxvt.keysym.KP_Separator : ,
+URxvt.keysym.KP_1:      1
+URxvt.keysym.KP_2:      2
+URxvt.keysym.KP_3:      3
+URxvt.keysym.KP_4:      4
+URxvt.keysym.KP_5:      5
+URxvt.keysym.KP_6:      6
+URxvt.keysym.KP_7:      7
+URxvt.keysym.KP_8:      8
+URxvt.keysym.KP_9:      9
+URxvt.keysym.KP_0:      0
+
+!black
+URxvt*color0: #282828
+URxvt*color8: #928374
+!red
+URxvt*color1: #cc241d
+URxvt*color9: #fb4934
+!green
+URxvt*color2: #98981a
+URxvt*color10: #b8bb26
+!yellow
+URxvt*color3: #689d6a
+URxvt*color11: #8ec07c
+!blue
+URxvt*color4: #458588
+URxvt*color12: #71c7f2
+!magenta
+URxvt*color5: #b16286
+URxvt*color13: #d3869b
+!cyan
+URxvt*color6: #fabd2f
+URxvt*color14: #d79921
+!white
+URxvt*color7: #ebdbb2
+URxvt*color15: #a89984
+
+URxvt.keysym.Shift-Control-C: perl:clipboard:copy
+URxvt.keysym.Shift-Control-V: perl:clipboard:paste
+URxvt.iso14755: False
+URxvt*geometry: 104x68-11-34

@@ -69,7 +69,7 @@ static const struct arg args[] = {
     { run_command, "  %s", "bluetoothctl info | grep 'Name' | awk '{print $2}'" },
     { run_command, " %s%%", "bluetoothctl info | grep 'Battery' | tr -d '()'  | awk '{print $4}'" },
     { run_command,  " | volume %s%%",     "pamixer --get-volume" },
-    { cpu_perc, " | cpu %s%%", NULL},
-    { ram_perc, " | mem %s%%", NULL},
+    { cpu_perc, " | cpu %s%%", NULL },
+    { ram_perc, " | mem %s%%", NULL },
     { datetime, " | %s", "%a %e %b %k:%M:%S " },
 };

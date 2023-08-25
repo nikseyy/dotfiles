@@ -44,11 +44,6 @@ call plug#end()
 " Splits open at the bottom and right, which is non-retarded, unlike vim defaults.
 	set splitbelow splitright
 
-" Shortcutting split navigation, saving a keypress:
-	map <C-h> <C-w>h
-	map <C-j> <C-w>k
-	map <C-k> <C-w>j
-	map <C-l> <C-w>l
 " Emmet Shortcuts
 let g:user_emmet_mode='n'   "Only enable normal mode functions.
 let g:user_emmet_leader_key=','

@@ -104,8 +104,6 @@ static Key keys[] = {
     { 0,                            XF86XK_AudioMute,         spawn,          SHCMD("pamixer -t") },
     { 0,                            XF86XK_AudioMicMute,      spawn,          SHCMD("pamixer --source 1 -t") },
     { MODKEY,                       XK_b,      togglebar,      {0} },
-    { MODKEY,                       XK_Up,     focusstack,     {.i = +1 } },
-    { MODKEY,                       XK_Down,   focusstack,     {.i = -1 } },
     { MODKEY,                       XK_t,      incnmaster,     {.i = +1 } },
     { MODKEY,                       XK_y,      incnmaster,     {.i = -1 } },
     { MODKEY,		            XK_r,      zoom,           {0} },

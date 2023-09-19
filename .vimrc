@@ -1,6 +1,8 @@
 let mapleader =","
 filetype off
 
+map q <Nop>
+
 set belloff=all
 set bg=light
 set go=a

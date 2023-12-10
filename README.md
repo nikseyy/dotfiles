@@ -8,10 +8,6 @@
 
 > $HOME
 
-### sysfiles
-
-> /etc/
-
 ### everything else
 
 > anywhere
